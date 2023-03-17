@@ -100,5 +100,5 @@ public class Main {
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
      * A4: while
      */
-    //ho guardato i suggerimeto
+    //ho guardato i suggerimenti perché non ho ben chiaro i casi specifici in cui uno é meglio di una altro (eccetto while e do while)
 }
