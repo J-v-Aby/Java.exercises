@@ -98,7 +98,7 @@ public class Main {
              System.out.println("B");
          }else if(percentuale> 70 && !isTestRetry){
             System.out.println("C");
-        }else if(percentuale> 60 && isTestRetry){
+        }else if(percentuale> 60 || !isTestRetry){
             System.out.println("D");
         }else{
             System.out.println("F");
