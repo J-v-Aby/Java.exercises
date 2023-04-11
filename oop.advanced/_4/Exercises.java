@@ -14,10 +14,10 @@ public class Exercises {
     private static final Path PATH_IN_A_FOLDER = Paths.get("mydirectory/file.txt");
 
     public static void main(String[] args) {
-        //exercise1();
-       // exercise2();
-      /*  exercise3();
-        exercise4();*/
+        exercise1();
+        exercise2();
+        exercise3();
+        exercise4();
         exercise5();
     }
 
