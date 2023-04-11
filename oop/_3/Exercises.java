@@ -1,4 +1,7 @@
-package oop._3;
+package javabasics._2.oop._3;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Exercises {
     public static void main(String[] args) {
@@ -48,18 +51,38 @@ public class Exercises {
     private static void exercise2() {
         System.out.println("\nExercise 2:");
 
+        //l'esercizio richideva vincoli e contegggi separati, io ho messo tutto in uno
+
         //Write your code here
         Student studente2= new Student("Valnza",'A',true);
         Student studente3= new Student("Vnza",'B',false);
         Student studente4= new Student("Va",'F',true);
         Student studente5= new Student("za",'A',false);
         Student studente6= new Student("Valnzato",'C',false);
+       // List<Student> lista= new ArrayList<>();  modificabile tramite .add
+
+      //  lista.add(studente2);
+      //  lista.add(studente3);
+       // lista.add(studente4);
+       // lista.add(studente5);
+       // lista.add(studente6);
+
+
+        List<Student> listaProva = List.of(studente2,studente3,studente4,studente5,studente6);// non modificabile da .add
 
 
 
+        int i=0;
+
+        for ( Student studente:listaProva) {
+           if (studente.idoneo()){
+               i++;
+           }
 
 
-       System.out.println("sei stato tra i" +" che hanno ottenuto la maglietta" );
+        }
+
+        System.out.println( "idonei= " + i );
 
 
 

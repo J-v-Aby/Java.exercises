@@ -1,4 +1,4 @@
-package oop._3;
+package javabasics._2.oop._3;
 
 public class Student {
     private String nome = null;
@@ -6,10 +6,9 @@ public class Student {
     private Integer etá;
     private String colorePreferito;
     private Integer numeroCivico;
-    private Integer maglietteSpedizioneDate = 0;//campo
     private Character votoProvaItinere;
     private Boolean repetuto;
-    private Integer totaleVincitori;
+
 
 
     Student(String nome, String cognome, Integer etá, String colorePreferito, Integer numeroCivico) {
@@ -73,65 +72,10 @@ public class Student {
 
     }
 
-    public Character getVotoProvaItinere() {
 
-
-        return votoProvaItinere;
+    boolean idoneo() {
+       return  ((votoProvaItinere.equals('A') || votoProvaItinere.equals('B')) && repetuto.equals(false));
     }
 
-    public void setVotoProvaItinere(Character votoProvaItinere) {
-        if (votoProvaItinere.equals('A') || votoProvaItinere.equals('B')) {
-            System.out.println("Ottimo lavoro");
-
-        }
-        this.votoProvaItinere = votoProvaItinere;
-    }
-
-    public Boolean getRepetuto() {
-        return repetuto;
-    }
-
-    public void setRepetuto(Boolean repetuto) {
-        if (repetuto.equals(false)) {
-            System.out.println("Primo tentativo");
-        }
-        this.repetuto = repetuto;
-    }
-
-    public Integer getMaglietteSpedizioneDate() {
-        return maglietteSpedizioneDate;
-    }
-
-    public void setMaglietteSpedizioneDate(Integer maglietteSpedizioneDate) {
-        this.maglietteSpedizioneDate = maglietteSpedizioneDate;
-    }
-
-    public Integer getTotaleVincitori() {
-        return totaleVincitori;
-    }
-
-    public void setTotaleVincitori(Integer totaleVincitori) {
-        ;
-        this.totaleVincitori = totaleVincitori;
-    }
-
-    Integer maglietteSpedizione() {
-        maglietteSpedizioneDate++;
-        return maglietteSpedizioneDate;
-    }
-
-    int esito() {
-        int idoneo=0;
-        int sum=0;
-        if ((votoProvaItinere.equals('A') || votoProvaItinere.equals('B')) && repetuto.equals(false)) {
-            idoneo++;
-
-        }
-        sum+=idoneo;
-
-        return sum;
-
-
-    }
 
 }
