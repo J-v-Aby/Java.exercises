@@ -1,4 +1,4 @@
-package oop._4;
+package javabasics._2.oop._4;
 
 public class ExerciseLunch {
     private Double price = null;

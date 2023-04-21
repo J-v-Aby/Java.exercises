@@ -1,4 +1,4 @@
-package oop._4;
+package javabasics._2.oop._4;
 //
 import java.util.Random;
 

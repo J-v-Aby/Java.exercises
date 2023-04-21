@@ -68,6 +68,6 @@ class CalculatorTest {
         System.out.println("\nExercise 3: ");
         // Your code here
         Calculator calculator = new Calculator();
-        Assertions.assertEquals(5,calculator.power(2.5,2.5 ));
+        Assertions.assertEquals(9.88,calculator.power(2,2.5 ));//valore lasciato sbagliato volontariamente
     }
 }
